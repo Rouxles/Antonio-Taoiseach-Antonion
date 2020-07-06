@@ -31,7 +31,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 
-  if(msg.content == `<@${client.user.id}>` ) {
+  if(msg.content == `<@!${client.user.id}>` || msg.content == `<@${client.user.id}>`) {
     msg.reply(ping_responses[Math.floor(Math.random()*ping_responses.length)]);
   }
 
