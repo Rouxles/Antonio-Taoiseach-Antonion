@@ -83,7 +83,7 @@ module.exports = {
     const name = generateName(tier);
 
     if(args.length != 2) {
-      if(args[2] == "changenickname") {
+      if(args[2].toLowerCase() == "changenickname") {
         msg.member.setNickname(name)
         .catch(console.error)
       }

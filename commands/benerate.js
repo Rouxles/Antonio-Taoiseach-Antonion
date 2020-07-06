@@ -136,7 +136,7 @@ module.exports = {
     let length = args.length;
     let nickname = false;
 
-    if(args.slice(-1) == "changenickname") {
+    if(args.slice(-1).join("").toLowerCase() == "changenickname") {
       length--;
       nickname = true
     }

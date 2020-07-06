@@ -1,12 +1,13 @@
 {
   "prefix": "taotry ",
-  "names": ["Ben","Guido","Tao","Yoni","Dale","Zhouheng","Antonio","Noah", "Elliott", "Manuel", "jo", "bpaul","dlin","zeph","Tam","tloh","Sean", "Salami", "Jack","kuruzu","tcy"],
+  "names": ["Ben","Guido","Tao","Yoni","Dale","Zhouheng","Antonio","Noah", "Elliott", "Manuel", "jo", "bpaul","dlin","zeph","Tam","tloh","Sean", "Salami", "Jack","kuruzu","tcy","dypy","Dylan","Will","Tommy","Joey"],
   "thanks": ["Thank you","Congration","Bouquets","Felicitations",
 			"Compliments","Praise","Commendation","Applause",
 			"Salute","Salutations","Acclamation","Congrats",
 			"Merry","Tribute","Cheers","Ovation","Obo","Accolade",
 			"Plaudits","Admiration","A pat on the back","Adulation",
 			"Homage","Eulogy","Encomium","Laurels","Kudos","Laudation",
-			"Cibfeatukations","Clpckbukje","Hej","Obrigado","iThabjs"]
+			"Cibfeatukations","Clpckbukje","Hej","Obrigado","iThabjs"],
+  "ping_responses": ["Ellliot","taotry","SHUT THE F*** HELL UP", "MY NAME I CANNOT TYPE IT","what the hell is angstrom\nisn't that the guy who went to the moon","cibfeatukations","13 13 13","gAk","angy raction","swor","¿Antonio Kam?"]
       
 }

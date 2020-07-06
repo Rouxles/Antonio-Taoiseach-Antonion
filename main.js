@@ -11,7 +11,7 @@ app.listen(port, () => console.log(`taotry listening at http://localhost:${port}
 
 // Main Code
 
-const {prefix, names, thanks} = require('./config.json');
+const {prefix, ping_responses} = require('./config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -31,7 +31,11 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 
-  if (!msg.content.startsWith(prefix) || msg.author.bot) return;
+  if(msg.content == `<@${client.user.id}>` ) {
+    msg.reply(ping_responses[Math.floor(Math.random()*ping_responses.length)]);
+  }
+
+  if (!msg.content.toLowerCase().startsWith(prefix) || msg.author.bot) return;
   const args = msg.content.slice(prefix.length-1).split(/ +/);
   var command_name;
   try {
@@ -58,18 +62,6 @@ client.on('message', msg => {
     console.error(error);
     msg.reply('there were poblers trying to execute that command!');
   }
-
-
-//   if (msg.content === `${prefix} ping`) {
-//     msg.reply('pong!');
-//   }
-//   else if (msg.content === `${prefix} info`) {
-//     msg.channel.send(`${generatePobler(msg.member.displayName)}`)
-//   }
-//   else if (msg.content === `${prefix} true`) {
-//     msg.channel.send(`${generateThanks(thanks)} ${randomName(names)}`)
-//   }
-// });
 });
 
 // process.on('unhandledRejection', error => {

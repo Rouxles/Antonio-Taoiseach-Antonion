@@ -25,6 +25,11 @@ module.exports = {
 	description: 'Returns pobler name of nickname',
   aliases: ["info", "information", "help"],
 	execute(msg, args) {
-		msg.channel.send(`${generatePobler(msg.member.displayName)}`)
+
+    let pobler_name = generatePobler(msg.member.displayName)
+
+		msg.channel.send(pobler_name);
+
+    
 	},
 };

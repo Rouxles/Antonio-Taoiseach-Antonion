@@ -209,7 +209,7 @@ module.exports = {
     if(args.length == 3) {
       if(isNaN(args[2]) === false && args[2] >= 1 && args[2] <= 100) {
         benerate_percentage = Math.floor(args[2]);
-      } else if(args[2] == "changenickname") {
+      } else if(args[2].toLowerCase() == "changenickname") {
         nickname = true;
       }
     } else if(args.length == 4) {

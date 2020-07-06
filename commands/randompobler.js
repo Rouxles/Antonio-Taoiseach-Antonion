@@ -12,6 +12,16 @@ module.exports = {
   aliases: ["pobler", "poblers", "randompoblers"],
 	description: 'Provides a random pobler',
 	execute(msg, args) {
-		msg.channel.send(randomPoblersName())
+
+    let random_pobler_name = randomPoblersName();
+
+		msg.channel.send(random_pobler_name);
+
+    if(args.length != 2) {
+      if(args[2].toLowerCase() == "changenickname") {
+        msg.member.setNickname(random_pobler_name)
+        .catch(console.error)
+      }
+    }
 	},
 };
