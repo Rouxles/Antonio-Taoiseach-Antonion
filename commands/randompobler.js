@@ -1,7 +1,7 @@
 const faker = require('faker');
 
 function randomPoblersName() {
-    let name = faker.name.findName();
+    let name = faker.fake("{{name.firstName}} {{name.lastName}}");
     let fname = name.slice(0,name.indexOf(" "));
     let lname = name.slice(name.indexOf(" ")+1, name.indexOf(" ")+2) + "oblers";
     return `${fname} ${lname}`;

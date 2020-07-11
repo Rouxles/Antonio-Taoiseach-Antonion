@@ -23,7 +23,7 @@ function generatePobler(name) {
 module.exports = {
 	name: 'hello',
 	description: 'Returns pobler name of nickname',
-  aliases: ["info", "information", "help"],
+  aliases: ["info", "information", "help", "hi"],
 	execute(msg, args) {
 
     let pobler_name = generatePobler(msg.member.displayName)
