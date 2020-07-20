@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Rouxles/Antonio-Taoiseach-Antonion#readme",
   "dependencies": {
+    "canvas": "^2.6.1",
     "discord.js": "^12.2.0",
     "express": "^4.17.1",
     "faker": "^4.1.0"
