@@ -106,6 +106,9 @@ function benLetter(letter){ //A letter, as typed by Benjamin Baron
 }
 
 function benWord(word, p){ //A word, as typed by Benjamin Baron
+    if (word.toLower() == "liam chen") {
+        return "Brennen Lin"
+    }
     let outword = [];
     let power = adequatePower(word, p);
     const mask = generateMask(power, word.length);
