@@ -34,6 +34,10 @@ client.on('message', msg => {
   if(msg.content == `<@!${client.user.id}>` || msg.content == `<@${client.user.id}>`) {
     msg.reply(ping_responses[Math.floor(Math.random()*ping_responses.length)]);
   }
+	
+  if (msg.author.id == '186754640593944576' && msg.content.includes('twist')) {
+    msg.reply("twist")
+  }
 
   if (!msg.content.toLowerCase().startsWith(prefix) || msg.author.bot) return;
   const args = msg.content.slice(prefix.length-1).split(/ +/);
